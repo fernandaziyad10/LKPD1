@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        body, form, input, select, button {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+       
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+
+    <p id="p1"></p>
+
+    <form id="myform">
+        <label for="">Nama</label>
+        <input type="text" name="nama" id="nama"><br>
+
+        <label for="">Age</label>
+        <input type="text" name="age" id="age"><br>
+
+        <label for="">Gender</label>
+        <select id="gender">
+            <option value="" disabled selected>Pilih disini</option>
+            <option value="Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script>
+       
+        const time = setTimeout(myTime, 10000);
+
+       
+        function myTime() {
+            alert("Waktu habis");
+        }
+
+       
+        function clearMyTime() {
+            clearTimeout(time);
+        }
+
+        
+        document.getElementById("submit").onclick = function(event) {
+            event.preventDefault(); 
+
+            var nama = document.getElementById("nama").value;
+            var age = document.getElementById("age").value;
+            var gender = document.getElementById("gender").value;
+
+            var hasil = "Nama: " + nama + "<br>" +
+                        "Usia: " + age + "<br>" +
+                        "Gender: " + gender;
+
+            document.getElementById("p1").innerHTML = hasil;
+
+            clearMyTime();  
+        }
+    </script>
+</body>
+</html>
+
+        
+    
+    </script>
+</body>
+</html>

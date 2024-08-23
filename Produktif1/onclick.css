@@ -1,0 +1,72 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for all form elements */
+/* .all {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+} */
+
+/* Styling for radio button containers */
+.ada, .meninggal, .tidak {
+    margin-bottom: 15px;
+}
+
+/* Styling for radio button labels */
+.all label {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Container for the fields that depend on the radio button selection */
+.hidup_mati {
+    margin-top: 20px;
+}
+
+/* Label styling for the dropdowns and inputs */
+.hidup_mati label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styling for dropdown selects */
+.hidup_mati select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for text inputs */
+.hidup_mati input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Adding a bit of styling for the submit button (if you have one) */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
